@@ -44,7 +44,7 @@ export default function Form() {
             {loading ? (
                 <p className="mt-4 text-white">Cargando...</p>
             ) : (
-                <p className="w-1/2 px-2 py-2 mt-6 text-white bg-black rounded-md">
+                <p className="w-1/2 px-2 py-2 mt-6 text-white bg-cyan-900/40 rounded-md border border-cyan-600">
                     {data}
                 </p>
             )}
