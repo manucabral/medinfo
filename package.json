@@ -1,8 +1,10 @@
 {
-    "name": "vite-tailwind-react",
+    "name": "medinfo",
     "private": true,
-    "version": "0.0.0",
+    "version": "0.0.1",
     "author": "manucabral",
+    "license": "GPL-3.0",
+    "description": "A React app to help you find medical information",
     "scripts": {
         "start": "npx http-server ./dist",
         "dev": "vite",
