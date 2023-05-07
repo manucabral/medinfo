@@ -1,10 +1,8 @@
-import Header from './components/Header'
 import Form from './components/Form'
 
 export default function App() {
     return (
-        <div className="flex items-center justify-center w-full h-screen bg-slate-600">
-            <Header />
+        <div className="flex h-screen items-center justify-center w-full bg-gradient-to-r from-slate-900 to-teal-800">
             <Form />
         </div>
     )
