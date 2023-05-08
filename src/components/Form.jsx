@@ -25,7 +25,7 @@ export default function Form() {
     }
     return (
         <div className="flex flex-col items-center justify-center w-full h-full">
-            <h2 className="text-2xl font-bold text-white text-center">
+            <h2 className="text-2xl w-1/2 font-bold text-white text-center">
                 Por favor, ingresa el nombre del medicamento o producto que deseas conocer.
             </h2>
             <input
