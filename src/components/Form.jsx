@@ -8,6 +8,11 @@ export default function Form() {
 
     const handleGenerate = async () => {
         try {
+            // only generate 10 times per day for free
+            // check ip address to see if it's the same user
+            // check if the user has already generated 10 times
+            // if so, return an error message
+            if (!prompt) return setData('Por favor, ingresa el nombre del medicamento o producto que deseas conocer.')
             setLoading(true)
             const res = await openai.createCompletion({
                 prompt: `Que es ${prompt}, solo responde con una oración.`,
@@ -39,10 +44,10 @@ export default function Form() {
                 type="button"
                 onClick={handleGenerate}
             >
-                Ejecutar
+                Consultar
             </button>
             {loading ? (
-                <p className="mt-4 text-white">Cargando...</p>
+                <p className="mt-4 text-white">Cargando tu consulta...</p>
             ) : (
                 data &&
                 <p className="lg:w-1/2 px-2 py-2 mt-6 text-center text-white bg-cyan-900/40 rounded-md border border-cyan-600">
